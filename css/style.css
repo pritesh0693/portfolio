@@ -82,6 +82,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-height);
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -89,6 +91,8 @@ body {
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.7;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   transition: background-color 0.4s ease, color 0.4s ease;
@@ -1829,6 +1833,10 @@ ul {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
   .nav-links {
     position: fixed;
     top: var(--nav-height);
@@ -1883,10 +1891,27 @@ ul {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 
+  .hero-visual,
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-photo-wrap {
+    max-width: min(280px, 78vw);
+  }
+
+  .hero-photo-badge {
+    left: 50%;
+    bottom: 12px;
+    transform: translateX(-50%);
+  }
+
   .hero-stats {
     flex-direction: column;
     gap: 20px;
     width: 100%;
+    max-width: 100%;
   }
 
   .stat-divider {
@@ -1914,8 +1939,23 @@ ul {
     left: 4px;
   }
 
+  .about-visual {
+    min-height: auto;
+    padding-bottom: 24px;
+  }
+
+  .about-float-card {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: fit-content;
+    margin: 10px auto 0;
+  }
+
   .about-float-card.card-2 {
-    left: 0;
+    left: auto;
   }
 
   .section {
