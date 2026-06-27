@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pritesh Dongare — PHP Laravel & CodeIgniter Developer specializing in ERP, HRMS, Payroll & Government Systems. 5+ years experience.">
+  <meta name="author" content="Pritesh Dongare">
+  <meta name="theme-color" content="#0a0a0f">
+  <title>Pritesh Dongare | PHP Laravel Developer</title>
+  <script>
+    (function () {
+      var theme = localStorage.getItem('portfolio-theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', theme === 'light' ? '#f8fafc' : '#0a0a0f');
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+          <i class="fas fa-sun theme-icon-light"></i>
+          <i class="fas fa-moon theme-icon-dark"></i>
+        </button>
+        <a href="mailto:dongarepritesh@anvitransport.com" class="nav-cta">Hire Me</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-gradient"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="pulse-dot"></span>
+          Available for Opportunities
+        </div>
+        <h1 class="hero-title reveal">
+          Hi, I'm <span class="gradient-text">Pritesh Dongare</span>
+        </h1>
+        <div class="hero-subtitle reveal">
+          <span id="typedText"></span><span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-desc reveal">
+          Building enterprise-grade ERP, HRMS & Payroll systems for government organizations
+          and businesses — with 5+ years of Laravel & CodeIgniter expertise.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#experience" class="btn btn-primary">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/pritesh-dongare-bb06ba1aa/" target="_blank" rel="noopener" class="btn btn-outline">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat-item">
+            <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Companies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Core Modules Built</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-glow"></div>
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo-frame">
+            <img src="assets/profile.jpeg" alt="Pritesh Dongare — PHP Laravel Developer" class="hero-photo" id="heroPhoto">
+          </div>
+          <div class="hero-photo-badge">
+            <i class="fas fa-code"></i>
+            <span>5+ Yrs Exp</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Crafting Robust <span class="gradient-text">Backend Systems</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="profile-card">
+            <div class="profile-ring"></div>
+            <div class="profile-ring ring-2"></div>
+            <div class="profile-avatar">
+              <img src="assets/profile.jpeg" alt="Pritesh Dongare" class="profile-photo" id="aboutPhoto">
+            </div>
+            <div class="profile-info">
+              <h3>Pritesh Dongare</h3>
+              <p>PHP Laravel Developer</p>
+            </div>
+          </div>
+          <div class="about-float-card card-1">
+            <i class="fas fa-code"></i>
+            <span>Laravel Expert</span>
+          </div>
+          <div class="about-float-card card-2">
+            <i class="fas fa-building"></i>
+            <span>Govt. HRMS</span>
+          </div>
+          <div class="about-float-card card-3">
+            <i class="fas fa-database"></i>
+            <span>MySQL & APIs</span>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <p class="about-lead">
+            PHP Laravel & CodeIgniter 3 Developer with <strong>5+ years</strong> of experience in developing
+            ERP, HRMS, logistics, and enterprise-level applications.
+          </p>
+          <p>
+            Experienced in payroll systems, leave management, employee service modules, invoicing,
+            role-based access control, and workflow-based business applications. Worked on government
+            HR and payroll systems for municipal corporations — handling complex rules, validations,
+            approval flows, pension processes, gratuity management, and compliance workflows.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-check"></i></div>
+              <div>
+                <h4>Enterprise ERP & HRMS</h4>
+                <p>Payroll, leave, pension & employee lifecycle modules</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-check"></i></div>
+              <div>
+                <h4>Government Systems</h4>
+                <p>BMC & Ulhasnagar Municipal Corporation projects</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-check"></i></div>
+              <div>
+                <h4>Payment Integrations</h4>
+                <p>Razorpay, Atom Gateway, wallet & invoice systems</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-contact-row">
+            <a href="tel:+918689985885" class="contact-chip">
+              <i class="fas fa-phone"></i> +91 8689985885
+            </a>
+            <a href="mailto:dongarepritesh@anvitransport.com" class="contact-chip">
+              <i class="fas fa-envelope"></i> dongarepritesh@anvitransport.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Programming & Frameworks</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="95">PHP</span>
+            <span class="skill-tag" data-level="92">Laravel</span>
+            <span class="skill-tag" data-level="88">CodeIgniter 3</span>
+            <span class="skill-tag" data-level="85">JavaScript</span>
+            <span class="skill-tag" data-level="82">jQuery</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-server"></i></div>
+            <h3>Database & APIs</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="90">MySQL</span>
+            <span class="skill-tag" data-level="88">REST APIs</span>
+            <span class="skill-tag" data-level="85">AJAX</span>
+            <span class="skill-tag" data-level="80">Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-briefcase"></i></div>
+            <h3>ERP & Business Systems</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="95">HRMS</span>
+            <span class="skill-tag" data-level="93">Payroll Management</span>
+            <span class="skill-tag" data-level="90">Leave Management</span>
+            <span class="skill-tag" data-level="88">Pension Modules</span>
+            <span class="skill-tag" data-level="85">Invoice Management</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-landmark"></i></div>
+            <h3>Government Workflows</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="92">Multi-Level Approvals</span>
+            <span class="skill-tag" data-level="90">Gratuity Process</span>
+            <span class="skill-tag" data-level="88">Employee Lifecycle</span>
+            <span class="skill-tag" data-level="85">6th & 7th Pay Commission</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-credit-card"></i></div>
+            <h3>Payment & Finance</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="88">Razorpay</span>
+            <span class="skill-tag" data-level="85">Atom Payment Gateway</span>
+            <span class="skill-tag" data-level="90">Wallet Systems</span>
+            <span class="skill-tag" data-level="87">PDF & Excel Reports</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
+            <h3>Tools & Version Control</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="85">Git</span>
+            <span class="skill-tag" data-level="85">GitHub</span>
+            <span class="skill-tag" data-level="80">Courier APIs</span>
+            <span class="skill-tag" data-level="82">Payslip Generation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill bars -->
+      <div class="skill-bars reveal">
+        <div class="skill-bar-item">
+          <div class="skill-bar-info"><span>PHP / Laravel</span><span>95%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-info"><span>HRMS & Payroll Systems</span><span>93%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="93"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-info"><span>MySQL & Database Design</span><span>90%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-info"><span>REST APIs & Integrations</span><span>88%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="company-logo g-ordinateur">
+                <span>G</span>
+              </div>
+              <div>
+                <span class="timeline-period"><i class="far fa-calendar"></i> Present</span>
+                <h3>PHP Laravel Developer</h3>
+                <p class="company-name">G-Ordinateur</p>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Working on HRMS and Payroll Management Systems for government organizations including
+              <strong>Bombay Municipal Corporation</strong> and <strong>Ulhasnagar Municipal Corporation</strong>.
+            </p>
+            <ul class="timeline-list">
+              <li>Employee onboarding & employee service management modules</li>
+              <li>Leave Management with multi-level approval (EL, CL, HPL)</li>
+              <li>Leave quota generation, balance calculation & carry forward rules</li>
+              <li>Employee service actions: promotion, demotion, transfer, VRS, suspension, rejoining</li>
+              <li>Suspension workflow: guilty/not guilty, recovery, deduction, refund, salary adjustment</li>
+              <li>Payroll modules based on 6th & 7th Pay Commission rules & pay matrix</li>
+              <li>Salary components: allowances, deductions, LIC, EMI, designation-wise config</li>
+              <li>Normal payroll, pension payroll, self pension & family pension modules</li>
+              <li>Payslip generation for employees and pensioners</li>
+              <li>Retirement & gratuity calculation with multi-level approval workflow</li>
+              <li>Employee death case processing & nominee document management</li>
+              <li>Challan reports for IAS, IPS & government employee categories</li>
+              <li>REST APIs for mobile application support</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Laravel</span><span>MySQL</span><span>REST APIs</span><span>Bootstrap</span><span>AJAX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="company-logo svp">
+                <span>SVP</span>
+              </div>
+              <div>
+                <span class="timeline-period"><i class="far fa-calendar"></i> June 2022 – Aug 2025</span>
+                <h3>PHP Laravel Developer</h3>
+                <p class="company-name">SVP InfoTech — Vidyavihar / Kurla, Mumbai</p>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Backend development and enhancements of ERP and logistics platforms with multi-role access systems.
+            </p>
+            <ul class="timeline-list">
+              <li>Multi-role access: Admin, Franchise, Accountant, Staff, Delivery Team, Branch Admin</li>
+              <li>Wallet systems with Razorpay & Atom payment gateway integrations</li>
+              <li>Courier APIs: Delhivery, Blue Dart, Xpress Bees — booking, tracking, label generation</li>
+              <li>Full Truck Load (FTL) workflows: truck assignment, route handling, passbook entries</li>
+              <li>REST APIs for mobile and web applications</li>
+              <li>Invoice generation & Excel/PDF reports for billing cycles</li>
+              <li>Scalable and modular backend architecture</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>PHP</span><span>Laravel</span><span>CodeIgniter</span><span>MySQL</span><span>Razorpay</span><span>Atom API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="company-logo cpw">
+                <span>CPW</span>
+              </div>
+              <div>
+                <span class="timeline-period"><i class="far fa-calendar"></i> Feb 2021 – May 2022</span>
+                <h3>Full Stack Developer</h3>
+                <p class="company-name">CPWWORLD — Kharghar, Navi Mumbai</p>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Started as Frontend Intern and progressed to Full Stack Developer — building dynamic websites and admin panels.
+            </p>
+            <ul class="timeline-list">
+              <li>Dynamic websites & admin panels using PHP and CodeIgniter</li>
+              <li>CMS modules for content, schedules, and page management</li>
+              <li>Search, filter, and listing functionalities</li>
+              <li>UI/UX improvements based on client feedback</li>
+              <li>API integrations and performance optimizations</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>PHP</span><span>CodeIgniter</span><span>JavaScript</span><span>jQuery</span><span>CSS</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academics</span>
+        <h2 class="section-title">Education & <span class="gradient-text">Background</span></h2>
+      </div>
+      <div class="education-grid">
+        <div class="edu-card reveal">
+          <div class="edu-card-visual">
+            <img src="assets/college.png" alt="MGM College Kamothe — Navi Mumbai" class="edu-bg-img">
+            <div class="edu-overlay"></div>
+           
+          </div>
+          <div class="edu-card-body">
+            <div class="edu-badge">Bachelor's Degree</div>
+            <h3>B.Sc. Information Technology</h3>
+            <p class="edu-college">MGM College of Computer Science & IT, Kamothe</p>
+            <p class="edu-university">Affiliated to University of Mumbai</p>
+            <div class="edu-meta">
+              <span><i class="far fa-calendar"></i> 2018 – 2021</span>
+              <span><i class="fas fa-star"></i> CGPA: 7.05</span>
+              <span><i class="fas fa-map-marker-alt"></i> Navi Mumbai</span>
+            </div>
+            <p class="edu-desc">
+              Three-year full-time degree program in Information Technology from an ISO 9001 certified
+              institute established in 2001, with state-of-the-art computer labs and industry-aligned curriculum.
+            </p>
+          </div>
+        </div>
+
+        <div class="edu-side reveal">
+          <div class="lang-card">
+            <h4><i class="fas fa-language"></i> Languages</h4>
+            <div class="lang-items">
+              <div class="lang-item">
+                <span>English</span>
+                <div class="lang-bar"><div class="lang-fill" style="width:90%"></div></div>
+              </div>
+              <div class="lang-item">
+                <span>Hindi</span>
+                <div class="lang-bar"><div class="lang-fill" style="width:95%"></div></div>
+              </div>
+              <div class="lang-item">
+                <span>Marathi</span>
+                <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <h4><i class="fas fa-award"></i> Key Domains</h4>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Government HR & Payroll Systems</li>
+              <li><i class="fas fa-check-circle"></i> ERP & Logistics Platforms</li>
+              <li><i class="fas fa-check-circle"></i> Payment Gateway Integration</li>
+              <li><i class="fas fa-check-circle"></i> Multi-Level Approval Workflows</li>
+              <li><i class="fas fa-check-circle"></i> Mobile REST API Development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p>PHP Laravel Developer · ERP · HRMS · Payroll Systems</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Pritesh Dongare. Crafted with passion.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
